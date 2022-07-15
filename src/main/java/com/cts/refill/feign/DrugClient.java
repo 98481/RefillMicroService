@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 
 
-@FeignClient(url = "http://localhost:8081/drugdetailapp",name = "drugdetailapp")
+@FeignClient(url = "http://Drugmicroservicemain.ap-south-1.elasticbeanstalk.com/drugdetailapp",name = "drugdetailapp")
 public interface DrugClient {
 	
 	@PutMapping("/updateDispatchableDrugStock/{name}/{location}/{quantity}")
