@@ -9,7 +9,7 @@ import com.cts.refill.model.TokenValid;
 
 
 /**Interface to connect with authentication service*/
-@FeignClient(name = "AUTH", url = "http://localhost:8090/authapp")
+@FeignClient(name = "AUTH", url = "http://drugmicroservice.ap-south-1.elasticbeanstalk.com/authapp")
 public interface AuthFeign {
 
 	/**
